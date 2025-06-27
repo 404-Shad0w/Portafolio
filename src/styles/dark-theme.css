@@ -1,0 +1,263 @@
+body {
+    background: #181a1b;
+    color: #eaeaea;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem 0 1rem;
+}
+
+#about, #projects {
+    margin-bottom: 2.5rem;
+}
+
+#about h2, #projects h2 {
+    color: #61dafb;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+#about p {
+    color: #bdbdbd;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+#projects > #projects {
+    margin-top: 1.5rem;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 0;
+}
+
+.project-card {
+    background: #23272a;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px #000a;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+}
+
+.project-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px #000c;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.project-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+.project-header a {
+    color: #61dafb;
+    text-decoration: none;
+    transition: color 0.2s;
+    word-break: break-all;
+}
+
+.project-header a:hover {
+    color: #21a1f3;
+}
+
+.project-lang {
+    background: #282c34;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.7rem;
+    font-size: 0.85rem;
+    margin-left: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.project-desc {
+    margin: 0.7rem 0 1.2rem 0;
+    color: #bdbdbd;
+    min-height: 48px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.project-meta {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.97rem;
+    color: #aaa;
+    margin-top: auto;
+}
+
+.project-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.project-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.btn-download, .btn-github {
+    background: #181a1b;
+    color: #61dafb;
+    border: 1px solid #61dafb;
+    border-radius: 0.4rem;
+    padding: 0.4rem 1.1rem;
+    font-size: 0.98rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px #0002;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-download:hover, .btn-github:hover {
+    background: #61dafb;
+    color: #181a1b;
+    box-shadow: 0 4px 16px #0004;
+}
+
+.error {
+    color: #ff6b6b;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Barra superior profesional */
+.navbar {
+    width: 100%;
+    background: #202225;
+    box-shadow: 0 2px 12px #0006;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.7rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #61dafb;
+    letter-spacing: 1.5px;
+    text-shadow: 0 2px 8px #0005;
+    user-select: none;
+    gap: 0.8rem;
+}
+
+.navbar-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 2px solid #61dafb;
+    box-shadow: 0 2px 8px #0005;
+    object-fit: cover;
+    background: #181a1b;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links li a {
+    color: #eaeaea;
+    text-decoration: none;
+    font-size: 1.08rem;
+    font-weight: 500;
+    transition: color 0.2s, background 0.2s;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.4rem;
+    letter-spacing: 0.2px;
+}
+
+.navbar-links li a:hover,
+.navbar-links li a:focus {
+    background: #282c34;
+    color: #61dafb;
+    outline: none;
+}
+
+/* Footer centrado y profesional */
+.footer {
+    background: #202225;
+    color: #bdbdbd;
+    padding: 2.5rem 1rem 1.2rem 1rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: #61dafb;
+    letter-spacing: 1px;
+}
+
+.footer-content p, .copyright {
+    margin: 0.2rem 0 0.7rem 0;
+    font-size: 1rem;
+    color: #bdbdbd;
+}
+
+.footer-content a {
+    color: #61dafb;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.2s;
+}
+
+.footer-content a:hover {
+    color: #21a1f3;
+    text-decoration: underline;
+}
