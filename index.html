@@ -1,83 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404-Shad0w | Portafolio</title>
-    <link rel="stylesheet" href="dark-theme.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404-Shad0w | Portafolio</title>
+  <link rel="stylesheet" href="dark-theme.css" />
 </head>
 <body>
-    <nav class="navbar">
-      <div class="navbar-content">
-        <div class="navbar-logo">
-          <img src="https://github.com/404-Shad0w.png" alt="Avatar" class="navbar-avatar"/>
-          <span>404-Shad0w</span>
-        </div>
-        <ul class="navbar-links">
-            <li><a href="pages/sobremi.html" class="active">Sobre mí</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#servers">Servidores</a></li>
-            <li><a href="pages/contacts.html">Contacto</a></li>
-        </ul>
+  <nav class="navbar">
+    <div class="navbar-content">
+      <div class="navbar-logo">
+        <img src="https://github.com/404-Shad0w.png" alt="Avatar" class="navbar-avatar" />
+        <span>404-Shad0w</span>
       </div>
-    </nav>
+      <ul class="navbar-links">
+        <li><a href="pages/sobremi.html" class="active">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#servers">Servidores</a></li>
+        <li><a href="pages/contacts.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <main>
-      <section id="about">
-          <h2>Sobre mí</h2>
-          <p>
-            ¡Hola! Soy <b>404-Shad0w</b>, desarrollador con 2 años de experiencia creando plugins y código para <b>PocketMine</b>.<br><br>
-            Aquí puedes ver algunos de mis proyectos.
-          </p>
-      </section>
+  <main>
+    <section id="about">
+      <h2>Sobre mí</h2>
+      <p>
+        ¡Hola! Soy <b>404-Shad0w</b>, desarrollador con 2 años de experiencia creando plugins y código para <b>PocketMine</b>.<br /><br />
+        Aquí puedes ver algunos de mis proyectos.
+      </p>
+    </section>
 
-      <section id="projects">
-          <h2>Proyectos</h2>
-          <div id="projects"></div>
-      </section>
+    <section id="projects">
+      <h2>Proyectos</h2>
+      <div class="projects-container" id="projects-container">
+        <!-- Las tarjetas se inyectan aquí desde JS -->
+      </div>
+    </section>
 
-            <section id="servers">
-        <h2>Servidores</h2>
-        <div class="server-cards">
-          <div class="server-card">
-            <div class="server-logo-container">
-              <img src="imgs/WATER.png" alt="WATER" class="server-logo">
-            </div>
-            <b>WATER</b>
-            <div class="server-role"></div>
+    <section id="servers">
+      <h2>Servidores</h2>
+      <div class="server-cards">
+        <div class="server-card">
+          <div class="server-logo-container">
+            <img src="imgs/WATER.png" alt="WATER" class="server-logo" />
           </div>
-          <div class="server-card">
-            <div class="server-logo-container">
-              <img src="imgs/KORE.png" alt="KORE" class="server-logo">
-            </div>
-            <b>KORE</b>
-            <div class="server-role"></div>
-          </div>
-          <div class="server-card">
-            <div class="server-logo-container">
-              <img src="imgs/ASUR.png" alt="ASUR" class="server-logo">
-            </div>
-            <b>ASUR</b>
-            <div class="server-role"></div>
-          </div>
-          <div class="server-card">
-            <div class="server-logo-container">
-              <img src="imgs/DARLING.png" alt="DARLING" class="server-logo">
-            </div>
-            <b>DARLING</b>
-            <div class="server-role"></div>
-          </div>
+          <b>WATER</b>
+          <div class="server-role"></div>
         </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="copyright">
-          &copy; 2025 404-Shad0w. Todos los derechos reservados.
+        <div class="server-card">
+          <div class="server-logo-container">
+            <img src="imgs/KORE.png" alt="KORE" class="server-logo" />
+          </div>
+          <b>KORE</b>
+          <div class="server-role"></div>
+        </div>
+        <div class="server-card">
+          <div class="server-logo-container">
+            <img src="imgs/ASUR.png" alt="ASUR" class="server-logo" />
+          </div>
+          <b>ASUR</b>
+          <div class="server-role"></div>
+        </div>
+        <div class="server-card">
+          <div class="server-logo-container">
+            <img src="imgs/DARLING.png" alt="DARLING" class="server-logo" />
+          </div>
+          <b>DARLING</b>
+          <div class="server-role"></div>
         </div>
       </div>
-    </footer>
-    <script src="github-projects.js"></script>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="copyright">
+        &copy; 2025 404-Shad0w. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="github-projects.js"></script>
 </body>
 </html>
