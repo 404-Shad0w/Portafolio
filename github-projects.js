@@ -1,5 +1,5 @@
 const githubUsername = '404-Shad0w';
-const projectsContainer = document.getElementById('projects');
+const projectsContainer = document.getElementById('projects-container');
 
 async function fetchGitHubProjects() {
     try {
